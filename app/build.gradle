@@ -15,25 +15,31 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildscript {
+        repositories {
+            // ... 其他存儲庫
+            maven { url 'https://jitpack.io' } // 將這一行添加到 repositories 中
+        }
+        // ...
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-
-}
-allprojects {
-    repositories {
-
-        maven { url 'https://jitpack.io' }
+    allprojects {
+        repositories {
+            mavenCentral()
+            maven { url "https://jitpack.io" }
+        }
     }
-}
 
+}
 
     dependencies {
-        compile 'com.github.kewang:map-controller:v2.1.0'
+        //implementation 'io.jitpack:gradle-simple:1.0.0'
+        //implementation 'com.github.Lin0308:jitpack:1.0'
+        implementation 'com.github.User:Repo:Version'
         implementation 'androidx.appcompat:appcompat:1.6.1'
         implementation 'com.google.android.material:material:1.5.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
