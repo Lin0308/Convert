@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">READ</string>
+    <string name="open_file">open file</string>
+    <string name="recorde">recorde</string>
+    <string name="play">play</string>
+    <string name="frame">frame</string>
+    <string name="priview">priview</string>
+</resources>
