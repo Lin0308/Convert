@@ -45,7 +45,7 @@ public class LineChartData {
                     set.setCircleRadius(4);//圓點大小
                     set.setDrawCircleHole(false);//圓點為實心(預設空心)
                     set.setLineWidth(1.5f);//線寬
-                    set.setDrawValues(true);//顯示座標點對應Y軸的數字(預設顯示)
+                    set.setDrawValues(false);//顯示座標點對應Y軸的數字(預設顯示)
                     set.setValueTextSize(8);//座標點數字大小
 
                     Legend legend = lineChart.getLegend();

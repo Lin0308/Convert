@@ -31,9 +31,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="190dp"
                 android:layout_height="200dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
-                />
+                android:layout_marginTop="30dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,14 +47,27 @@
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="@string/frame"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 tools:ignore="VisualLintTextFieldSize" />
+
+
+            <EditText
+                android:id="@+id/ConSec"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/convert_ms"
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="80dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:textSize="30dp"
+                android:textAlignment="center"
                 android:text="TextView" />
         </LinearLayout>
 
@@ -86,8 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
-                    android:text="@string/priview"
-                     />
+                    android:text="@string/priview" />
 
                 <Button
                     android:id="@+id/Convert"

@@ -5,4 +5,5 @@
     <string name="play">play</string>
     <string name="frame">frame</string>
     <string name="priview">priview</string>
+    <string name="convert_ms">Convert (ms)</string>
 </resources>
